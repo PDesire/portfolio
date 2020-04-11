@@ -5,6 +5,7 @@
         fill="outline"
         shape="round"
         color="dark"
+        aria-label="Github"
         @click="openURL('https://github.com/PDesire')"
       >
         <fa :icon="faGithub" />
@@ -12,6 +13,7 @@
       <ion-button
         fill="outline"
         shape="round"
+        aria-label="Twitter"
         @click="openURL('https://twitter.com/PDesireDev')"
       >
         <fa :icon="faTwitter" />
@@ -20,6 +22,7 @@
         fill="outline"
         shape="round"
         color="danger"
+        aria-label="Instagram"
         @click="openURL('https://www.instagram.com/pdesire_chan')"
       >
         <fa :icon="faInstagram" />

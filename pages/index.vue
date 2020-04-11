@@ -88,7 +88,7 @@
           </ion-col>
         </ion-row>
         <ion-row class="ion-justify-content-around">
-          <ion-col size="6">
+          <ion-col size="8">
             <div v-if="show" class="end-container">
               <h1 class="end-title">
                 Social Media
