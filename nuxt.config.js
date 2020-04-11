@@ -18,6 +18,9 @@ module.exports = {
         content: process.env.npm_package_description || ''
       }
     ],
+    noscript: [
+      { innerHTML: 'This page does not work without JavaScript enabled.', body: true }
+    ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   /*
@@ -74,9 +77,6 @@ module.exports = {
         iframes: true,
         polyfill: true,
         directiveOnly: false,
-
-        // Default image must be in the static folder
-        defaultImage: '/images/default-image.jpg',
 
         // To remove class set value to false
         loadedClass: 'isLoaded',
