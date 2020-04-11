@@ -1,7 +1,5 @@
 const baseHref = process.env.BASE_HREF || '/';
 
-/* eslint-disable */
-
 module.exports = {
   mode: 'spa',
   /*
@@ -19,7 +17,10 @@ module.exports = {
       }
     ],
     noscript: [
-      { innerHTML: 'This page does not work without JavaScript enabled.', body: true }
+      {
+        innerHTML: 'This page does not work without JavaScript enabled.',
+        body: true
+      }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },

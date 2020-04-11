@@ -2,7 +2,7 @@
   <ion-page>
     <ion-content>
       <ion-grid>
-        <ion-row class="ion-justify-content-around">
+        <ion-row id="top" class="ion-justify-content-around">
           <ion-col size="6">
             <div v-if="show" class="container">
               <ion-avatar class="avatar">
@@ -98,12 +98,17 @@
           </ion-col>
         </ion-row>
       </ion-grid>
+      <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+        <ion-fab-button @click="scrollToTop()">
+          <fa :icon="faArrowUp" />
+        </ion-fab-button>
+      </ion-fab>
     </ion-content>
   </ion-page>
 </template>
 
 <script>
-import { TweenMax, Back } from 'gsap';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import CareerTimeline from '../components/CareerTimeline';
 import AboutMe from '../components/AboutMe';
 import Knowledge from '../components/Knowledge';
@@ -118,33 +123,22 @@ export default {
     AboutMe,
     CareerTimeline
   },
-  transition: {
-    mode: 'out-in',
-    css: false,
-    beforeEnter(el) {
-      TweenMax.set(el, {
-        opacity: 0
-      });
-    },
-    enter(el, done) {
-      TweenMax.to(el, 1, {
-        opacity: 1,
-        ease: Back.easeOut
-      });
-      done();
-    },
-    leave(el, done) {
-      TweenMax.to(el, 1, {
-        opacity: 0,
-        ease: Back.easeIn
-      });
-      done();
-    }
-  },
   data() {
     return {
       show: true
     };
+  },
+  computed: {
+    faArrowUp() {
+      return faArrowUp;
+    }
+  },
+  methods: {
+    scrollToTop() {
+      document.querySelector('#top').scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
   }
 };
 </script>
