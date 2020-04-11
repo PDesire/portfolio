@@ -14,7 +14,7 @@
           </ion-col>
         </ion-row>
         <ion-row class="ion-justify-content-around">
-          <ion-col size="3">
+          <ion-col size="6">
             <div v-if="show" class="container">
               <h1 class="name">
                 Tristan Marsell
@@ -23,7 +23,7 @@
           </ion-col>
         </ion-row>
         <ion-row class="ion-justify-content-around">
-          <ion-col size="5">
+          <ion-col size="7">
             <div v-if="show" class="name">
               <ion-chip color="primary">
                 <ion-label color="dark">#Frontend</ion-label>
