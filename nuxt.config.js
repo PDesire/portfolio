@@ -1,5 +1,7 @@
 const baseHref = process.env.BASE_HREF || '/';
 
+/* eslint-disable */
+
 module.exports = {
   mode: 'spa',
   /*
@@ -21,7 +23,7 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#000' },
   /*
    ** Global CSS
    */
@@ -60,6 +62,29 @@ module.exports = {
             icons: ['faCog', 'faCalendar', 'faHome', 'faCircle', 'faCheck']
           }
         ]
+      }
+    ],
+    [
+      'nuxt-lazy-load',
+      {
+        // These are the default values
+        images: true,
+        videos: true,
+        audios: true,
+        iframes: true,
+        polyfill: true,
+        directiveOnly: false,
+
+        // Default image must be in the static folder
+        defaultImage: '/images/default-image.jpg',
+
+        // To remove class set value to false
+        loadedClass: 'isLoaded',
+        appendClass: 'lazyLoad',
+
+        observerConfig: {
+          // See IntersectionObserver documentation
+        }
       }
     ]
   ],

@@ -7,7 +7,9 @@
             <div v-if="show" class="container">
               <ion-avatar class="avatar">
                 <img
+                  v-lazy-load
                   src="https://avatars1.githubusercontent.com/u/20514588?s=460&u=ece8cfb85d84ffe7b4766a97f5a1eed0215f991a&v=4"
+                  alt="Tristan Marsell"
                 />
               </ion-avatar>
             </div>

@@ -6,6 +6,7 @@
           <div class="card-container">
             <div class="image-container">
               <img
+                v-lazy-load
                 src="https://flutter.dev/assets/flutter-lockup-c13da9c9303e26b8d5fc208d2a1fa20c1ef47eb021ecadf27046dea04c0cebf6.png"
                 alt="flutter"
               />
@@ -20,7 +21,7 @@
         <ion-card-content>
           <div class="card-container">
             <div class="image-container">
-              <img src="~/assets/tslogo.png" alt="typescript" />
+              <img v-lazy-load src="~/assets/tslogo.png" alt="typescript" />
             </div>
             <div class="text-container">
               TypeScript
@@ -33,6 +34,7 @@
           <div class="card-container">
             <div class="image-container">
               <img
+                v-lazy-load
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Ionic_Logo.svg/640px-Ionic_Logo.svg.png"
                 alt="ionic-framework"
               />
@@ -50,6 +52,7 @@
           <div class="card-container">
             <div class="image-container">
               <img
+                v-lazy-load
                 src="https://upload.wikimedia.org/wikipedia/commons/4/45/NuxtJS_Logo.png"
                 alt="nuxtjs"
               />
@@ -65,6 +68,7 @@
           <div class="card-container">
             <div class="image-container">
               <img
+                v-lazy-load
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/640px-Node.js_logo.svg.png"
                 alt="nodejs"
               />
@@ -80,6 +84,7 @@
           <div class="card-container">
             <div class="image-container">
               <img
+                v-lazy-load
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/600px-Angular_full_color_logo.svg.png"
                 alt="angular"
               />
@@ -97,6 +102,7 @@
           <div class="card-container">
             <div class="image-container">
               <img
+                v-lazy-load
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin-logo.svg/600px-Kotlin-logo.svg.png"
                 alt="kotlin"
               />
@@ -112,6 +118,7 @@
           <div class="card-container">
             <div class="image-container">
               <img
+                v-lazy-load
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Android_logo_2019.svg/550px-Android_logo_2019.svg.png"
                 alt="android"
               />
@@ -127,6 +134,7 @@
           <div class="card-container">
             <div class="image-container">
               <img
+                v-lazy-load
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/640px-Go_Logo_Blue.svg.png"
                 alt="golang"
               />
@@ -144,6 +152,7 @@
           <div class="card-container">
             <div class="image-container">
               <img
+                v-lazy-load
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Dart_programming_language_logo.svg/640px-Dart_programming_language_logo.svg.png"
                 alt="dart programming language"
               />
@@ -159,6 +168,7 @@
           <div class="card-container">
             <div class="image-container">
               <img
+                v-lazy-load
                 src="https://upload.wikimedia.org/wikipedia/de/thumb/6/6b/Redis_Logo.svg/640px-Redis_Logo.svg.png"
                 alt="redis"
               />
@@ -174,6 +184,7 @@
           <div class="card-container">
             <div class="image-container">
               <img
+                v-lazy-load
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/640px-MongoDB_Logo.svg.png"
                 alt="mongodb"
               />

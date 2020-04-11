@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-nuxt",
+  "name": "Tristan Marsell's Webpage",
   "version": "1.0.0",
   "description": "My personal portfolio page",
   "author": "Tristan Marsell",
@@ -25,6 +25,7 @@
     "gsap": "^3.2.6",
     "nuxt": "^2.0.0",
     "nuxt-fontawesome": "^0.4.0",
+    "nuxt-lazy-load": "^1.1.9",
     "push-dir": "^0.4.1",
     "vue-cute-timeline": "^1.2.8"
   },
