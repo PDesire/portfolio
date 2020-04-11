@@ -8,9 +8,9 @@
     </p>
     <br />
     <br />
-    <h2 class="title">
+    <h1 class="title">
       Hobbys
-    </h2>
+    </h1>
     <br />
     <br />
     <p>
@@ -25,9 +25,9 @@
     </p>
     <br />
     <br />
-    <h2 class="title">
+    <h1 class="title">
       Some biography
-    </h2>
+    </h1>
     <br />
     <br />
     <p>

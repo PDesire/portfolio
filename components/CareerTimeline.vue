@@ -22,16 +22,16 @@
       <span class="date-string">Sep. 2018 – Feb. 2019</span>
     </timeline-item>
     <timeline-item :hollow="true">
-      Internship |
-      <span class="date-string">July 2018 – Aug. 2018</span>
+      Internship / Software Developer |
+      <span class="date-string">Aug. 2018</span>
     </timeline-item>
     <timeline-item :bg-color="secondaryBgColor">
       <span class="company-name">PHYTEC Messtechnik GmbH</span>
       | Mainz
     </timeline-item>
     <timeline-item :hollow="true">
-      Internship |
-      <span class="date-string">July 2017</span>
+      Internship / Embedded Developer |
+      <span class="date-string">June 2017</span>
     </timeline-item>
   </timeline>
 </template>

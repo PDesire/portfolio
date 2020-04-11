@@ -40,10 +40,20 @@
           </ion-col>
         </ion-row>
         <ion-row class="ion-justify-content-around">
+          <ion-col size="4">
+            <div v-if="show" class="container">
+              <p class="letter">
+                „All our dreams can come true, if we have the courage to pursue
+                them.“ — Walt Disney
+              </p>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-around">
           <ion-col size="auto" size-xl>
             <div v-if="show" class="container">
               <h1 class="title">
-                About me
+                About myself
               </h1>
               <ion-card mode="ios">
                 <ion-card-content>
@@ -175,6 +185,11 @@ ion-page {
 }
 .name {
   text-align: center;
+}
+.letter {
+  text-align: center;
+  font-style: italic;
+  color: grey;
 }
 .title {
   text-align: center;
