@@ -35,7 +35,7 @@
           <div class="card-container">
             <div>
               <div class="text-container">
-                transport2Go
+                fahrgemeinschaft/transport2Go
               </div>
               <div class="text-subtitle-container">
                 UI concept of a portal for transportation.
@@ -138,53 +138,53 @@
 </template>
 
 <script>
-export default {
-  name: 'Projects',
-  methods: {
-    openURL(url) {
-      window.open(url, '_blank');
+  export default {
+    name: 'Projects',
+    methods: {
+      openURL(url) {
+        window.open(url, '_blank');
+      }
     }
-  }
-};
+  };
 </script>
 
 <style scoped>
-ion-card {
-  width: 40%;
-  min-width: 40vh;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-ion-card:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-.card-container {
-  height: 50%;
-  width: 100%;
-  display: block;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s ease-in-out;
-}
-.text-container {
-  text-align: left;
-  font-weight: bold;
-  font-size: large;
-}
-.text-subtitle-container {
-  word-wrap: break-word;
-  text-wrap: normal;
-  text-align: left;
-  font-weight: normal;
-  font-size: large;
-}
-.text-language-container {
-  padding-top: 20px;
-  text-align: left;
-  font-weight: normal;
-  font-size: medium;
-}
+  ion-card {
+    width: 40%;
+    min-width: 40vh;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  ion-card:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .card-container {
+    height: 50%;
+    width: 100%;
+    display: block;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
+  }
+  .text-container {
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+  }
+  .text-subtitle-container {
+    word-wrap: break-word;
+    text-wrap: normal;
+    text-align: left;
+    font-weight: normal;
+    font-size: large;
+  }
+  .text-language-container {
+    padding-top: 20px;
+    text-align: left;
+    font-weight: normal;
+    font-size: medium;
+  }
 </style>

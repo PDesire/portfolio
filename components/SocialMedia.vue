@@ -50,56 +50,56 @@
 </template>
 
 <script>
-import {
-  faGithub,
-  faTwitter,
-  faInstagram,
-  faXing
-} from '@fortawesome/free-brands-svg-icons';
-import { faEdit } from '@fortawesome/free-solid-svg-icons';
+  import {
+    faGithub,
+    faTwitter,
+    faInstagram,
+    faXing
+  } from '@fortawesome/free-brands-svg-icons';
+  import { faEdit } from '@fortawesome/free-solid-svg-icons';
 
-export default {
-  name: 'SocialMedia',
-  computed: {
-    faGithub() {
-      return faGithub;
+  export default {
+    name: 'SocialMedia',
+    computed: {
+      faGithub() {
+        return faGithub;
+      },
+      faTwitter() {
+        return faTwitter;
+      },
+      faInstagram() {
+        return faInstagram;
+      },
+      faEdit() {
+        return faEdit;
+      },
+      faXing() {
+        return faXing;
+      }
     },
-    faTwitter() {
-      return faTwitter;
-    },
-    faInstagram() {
-      return faInstagram;
-    },
-    faEdit() {
-      return faEdit;
-    },
-    faXing() {
-      return faXing;
+    methods: {
+      openURL(url) {
+        window.open(url, '_blank');
+      }
     }
-  },
-  methods: {
-    openURL(url) {
-      window.open(url, '_blank');
-    }
-  }
-};
+  };
 </script>
 
 <style scoped>
-ion-button {
-  width: 60px;
-  height: 60px;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s ease-in-out;
-}
-.icon {
-  width: 20px;
-  height: 20px;
-}
-ion-button:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
+  ion-button {
+    width: 60px;
+    height: 60px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  ion-button:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 </style>

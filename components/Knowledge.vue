@@ -200,38 +200,38 @@
 </template>
 
 <script>
-export default {
-  name: 'Knowledge'
-};
+  export default {
+    name: 'Knowledge'
+  };
 </script>
 
 <style scoped>
-.card-container {
-  height: 200px;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.image-container {
-  align-self: flex-start;
-  width: 150px;
-  margin: auto;
-}
-.image-container img {
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s ease-in-out;
-}
-.image-container:hover img {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-.text-container {
-  text-align: center;
-  font-weight: bold;
-  font-size: large;
-}
+  .card-container {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .image-container {
+    align-self: flex-start;
+    width: 150px;
+    margin: auto;
+  }
+  .image-container img {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
+  }
+  .image-container:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .text-container {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+  }
 </style>
