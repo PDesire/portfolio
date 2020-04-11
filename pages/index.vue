@@ -59,7 +59,7 @@
             </div>
           </ion-col>
         </ion-row>
-        <ion-row class="ion-justify-content-around">
+        <ion-row id="career" class="ion-justify-content-around">
           <ion-col size="auto" size-xl>
             <div v-if="show" class="container">
               <h1 class="title">
@@ -69,7 +69,7 @@
             </div>
           </ion-col>
         </ion-row>
-        <ion-row>
+        <ion-row id="knowledge">
           <ion-col>
             <div v-if="show" class="container">
               <h1 class="title">
@@ -79,7 +79,7 @@
             </div>
           </ion-col>
         </ion-row>
-        <ion-row>
+        <ion-row id="projects">
           <ion-col>
             <div v-if="show" class="container">
               <h1 class="title">
@@ -121,16 +121,35 @@
         </ion-row>
       </ion-grid>
       <ion-fab slot="fixed" vertical="bottom" horizontal="end">
-        <ion-fab-button @click="scrollToTop()">
-          <fa :icon="faArrowUp" />
+        <ion-fab-button>
+          <fa :icon="faArrowCircleUp" />
         </ion-fab-button>
+        <ion-fab-list side="top">
+          <ion-fab-button data-desc="Projects" @click="scrollTo('projects')">
+            <fa :icon="faLaptop" />
+          </ion-fab-button>
+          <ion-fab-button data-desc="Knowledge" @click="scrollTo('knowledge')">
+            <fa :icon="faDrawPolygon" />
+          </ion-fab-button>
+          <ion-fab-button data-desc="Career" @click="scrollTo('career')">
+            <fa :icon="faRunning" />
+          </ion-fab-button>
+          <ion-fab-button data-desc="Go to top" @click="scrollTo('top')">
+            <fa :icon="faArrowCircleUp" />
+          </ion-fab-button>
+        </ion-fab-list>
       </ion-fab>
     </ion-content>
   </ion-page>
 </template>
 
 <script>
-  import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+  import {
+    faDrawPolygon,
+    faRunning,
+    faLaptop,
+    faArrowCircleUp
+  } from '@fortawesome/free-solid-svg-icons';
   import CareerTimeline from '../components/CareerTimeline';
   import AboutMe from '../components/AboutMe';
   import Knowledge from '../components/Knowledge';
@@ -155,13 +174,22 @@
       };
     },
     computed: {
-      faArrowUp() {
-        return faArrowUp;
+      faDrawPolygon() {
+        return faDrawPolygon;
+      },
+      faLaptop() {
+        return faLaptop;
+      },
+      faRunning() {
+        return faRunning;
+      },
+      faArrowCircleUp() {
+        return faArrowCircleUp;
       }
     },
     methods: {
-      scrollToTop() {
-        document.querySelector('#top').scrollIntoView({
+      scrollTo(elementName) {
+        document.querySelector('#' + elementName).scrollIntoView({
           behavior: 'smooth'
         });
       }
@@ -176,6 +204,23 @@
   }
   ion-page {
     height: 100%;
+  }
+  ion-fab-button[data-desc] {
+    position: relative;
+  }
+
+  ion-fab-button[data-desc]::after {
+    position: absolute;
+    content: attr(data-desc);
+    z-index: 1;
+    right: 55px;
+    bottom: 4px;
+    background-color: black;
+    padding: 9px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+      0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
   }
   .container {
     padding-top: 20px;
